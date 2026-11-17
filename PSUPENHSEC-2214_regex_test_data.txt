@@ -1,0 +1,38 @@
+PSUPENHSEC-2214 - REGEX_WHITELIST Test Data
+Regex: (?i)\bquote\s*(?:#\s*:|id\s*:\s*#)\s*\d+\b
+
+TC01 | Input: quote #: 12345
+Expected: MATCH
+
+TC02 | Input: quote id: #12345
+Expected: MATCH
+
+TC03 | Input: QUOTE #: 12345
+Expected: MATCH
+
+TC04 | Input: Quote ID: # 98765
+Expected: MATCH
+
+TC05 | Input: quote    #:    123
+Expected: MATCH
+
+TC06 | Input: quote id : # 12345
+Expected: MATCH
+
+TC07 | Input: quotation #: 12345
+Expected: NO MATCH
+
+TC08 | Input: quote #: ABC123
+Expected: NO MATCH
+
+TC09 | Input: quote #12345
+Expected: NO MATCH
+
+TC10 | Input: quote id: 12345
+Expected: NO MATCH
+
+TC11 | Input: myquote #: 12345
+Expected: NO MATCH
+
+TC12 | Input: quote #: 12345ABC
+Expected: NO MATCH
