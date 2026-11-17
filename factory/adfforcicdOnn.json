@@ -1,0 +1,15 @@
+{
+	"name": "adfforcicdOnn",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "switzerlandwest",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0d08b824-f6ca-4cbd-ae27-871389b928f7",
+		"tenantId": "76838db0-fe94-4f36-a1a5-83235a266424"
+	}
+}
